@@ -6,6 +6,8 @@ min_duration = 0 # Min. duration of a QSO to qualify for a push notification
 min_silence = 300 # Min. time in seconds after the last QSO before a new push notification will be send
 verbose = True # Enable extra messages (console only)
 emit_sound = True
+open_webbrowser = True
+url_to_open = "https://brandmeister.network/?page=lh&jsonquery=%7B%22condition%22%3A%22OR%22%2C%22rules%22%3A%5B%7B%22id%22%3A%22DestinationID%22%2C%22field%22%3A%22DestinationID%22%2C%22type%22%3A%22integer%22%2C%22input%22%3A%22text%22%2C%22operator%22%3A%22equal%22%2C%22value%22%3A%223179400%22%7D%2C%7B%22id%22%3A%22DestinationID%22%2C%22field%22%3A%22DestinationID%22%2C%22type%22%3A%22integer%22%2C%22input%22%3A%22text%22%2C%22operator%22%3A%22equal%22%2C%22value%22%3A%223187028%22%7D%5D%7D" # PUT YOUR URL IN HERE!!!!!
 
 # Pushover configuration
 pushover = False # Enable or disable notifications via Pushover

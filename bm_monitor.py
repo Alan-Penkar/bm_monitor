@@ -24,6 +24,7 @@ import time
 import socketio
 import http.client, urllib
 import playsound3
+import webbrowser
 
 # libary only needed if Discord is configured in config.py
 if cfg.discord:
@@ -175,7 +176,9 @@ def on_mqtt(data):
             if cfg.discord:
                 push_discord(cfg.discord_wh_url, construct_message(call))
             if cfg.emit_sound:
-                playsound3.playsound('sounds/Sound4.wav');
+                playsound3.playsound('sounds/Sound4.wav')
+            if cfg.open_webbrowser:
+                webbrowser.open(cfg.url_to_open)
 
 @sio.event
 def disconnect():
