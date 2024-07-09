@@ -1,5 +1,5 @@
 # adapt the following variables to your needs
-talkgroups = [1234,4567] # Talkgroups to monitor, seperated by commas
+talkgroups = [3179400, 3187028] # Talkgroups to monitor, seperated by commas
 callsigns = ['WA1ABC','W1AW'] # Callsigns to monitor, seperated by commas
 noisy_calls = ["L1DHAM", "N0CALL", "N0C4LL"] # Noisy calls signs that will be ignored
 min_duration = 0 # Min. duration of a QSO to qualify for a push notification

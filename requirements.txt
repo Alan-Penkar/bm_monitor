@@ -1,4 +1,4 @@
 requests
 discord-webhook
 python-socketio[client]
-playsound
+playsound3

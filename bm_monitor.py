@@ -23,7 +23,7 @@ import datetime as dt
 import time
 import socketio
 import http.client, urllib
-import playsound
+import playsound3
 
 # libary only needed if Discord is configured in config.py
 if cfg.discord:
@@ -175,7 +175,7 @@ def on_mqtt(data):
             if cfg.discord:
                 push_discord(cfg.discord_wh_url, construct_message(call))
             if cfg.emit_sound:
-                playsound.playsound('sounds/Sound4.wav');
+                playsound3.playsound('sounds/Sound4.wav');
 
 @sio.event
 def disconnect():
